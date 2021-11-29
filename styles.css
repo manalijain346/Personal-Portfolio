@@ -115,11 +115,11 @@ h1{
 }
 
 .profile-link{
-    margin: 40px;
+    margin: 24px;
     text-decoration: none;
     color: white;
     font-size: xx-large;
-    padding: 20px;
+    padding: 10px;
 }
 
 .section-heading p{
@@ -140,10 +140,10 @@ h1{
     }
 
     .profile-link{
-        margin: auto;
+    margin: 10px;
     }
     
     .contact-section{
-        height: 65vh;
+        height: 90vh;
     }
 }
