@@ -97,6 +97,14 @@ h1{
     font-size: 26px;
 }
 
+.project-tile:hover{
+    font-size: 30px;
+    color:#BE3144;
+    transition: color 0.3s ease-out;
+}
+
+
+
 .contact-section{
     display: flex;
     flex-direction: column;
