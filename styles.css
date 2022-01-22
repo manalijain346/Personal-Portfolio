@@ -31,6 +31,9 @@ html {
     text-decoration: none;
     margin-right: 32px;
     color: white;
+    position: relative;
+    letter-spacing: 1px;
+    padding-bottom: 6px;
 }
 
 .welcome-section{
@@ -64,10 +67,24 @@ h1{
     font-style: italic;
 }
 
-.nav-link:hover{
-    color: #BE3144;
-    transition: color 0.3s ease;
+.nav-link::after{
+    width: 0px;
+    content: "";
+    position: absolute; 
+    bottom: 0px;
+    left: 0px;
+    height: 2px;
+    background-color: #BE3144;
+    transition: 00.4s ease-out;
 }
+
+.nav-link:hover::after{
+    left: 0;
+    width: 70%;
+    
+}
+
+        
 
 .project-section{
     background-color: #45567D;
