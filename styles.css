@@ -3,8 +3,21 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* Reset CSS - END */
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;;
     line-height: 1.5;
+    background-image: url(assets/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: auto;
 }
 
 html {
@@ -13,35 +26,31 @@ html {
 
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-end;
     align-items: center;
-    background-color: black;
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
+    padding: 24px;
+    backdrop-filter: blur(20px);
+    background: rgba(159, 253, 159, 0.164);
+
 }
 
 .nav-items{
     display: flex;
     font-size: 18px;
+    font-weight: 700;
 }
 
 .nav-link{
     text-decoration: none;
     margin-right: 32px;
-    color: white;
-    position: relative;
+    color: #9333ea;
     letter-spacing: 1px;
-    padding-bottom: 6px;
+    margin-left: 10px;
 }
 
 .welcome-section{
 width: 100%;
 height: 100vh;
-background-image :url(assets/images/portfolio.jpg);
-background-size: cover;
-background-repeat: no-repeat;
 }
 
 .text-container{
@@ -50,6 +59,7 @@ background-repeat: no-repeat;
     justify-content: center;
     height: 624px;
     align-items: center;
+    margin-top: 26px;
 }
 
 .photo{
@@ -57,14 +67,31 @@ background-repeat: no-repeat;
 }
 
 h1{
-    color: white;
+    margin-top: 20px;
     font-size: -webkit-xxx-large;
+    font-weight: 700;
 }
 
 .sub-heading{
-    color: #BE3144;
+    color: #9333ea;
     font-size: xx-large;
-    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 36px;
+}
+
+.skills-head{
+    margin-right: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.skills{
+    color: #f9f871;
+    background-color: #9333ea;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-left: 10px;
 }
 
 .nav-link::after{
@@ -74,8 +101,6 @@ h1{
     bottom: 0px;
     left: 0px;
     height: 2px;
-    background-color: #BE3144;
-    transition: 00.4s ease-out;
 }
 
 .nav-link:hover::after{
@@ -84,47 +109,55 @@ h1{
     
 }
 
-        
-
 .project-section{
-    background-color: #45567D;
-    height: auto;
-    padding: 10px;
-    color: white;
+    margin: 20px;
+}
+
+.project-section-header{
     text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 20px;
 }
 
- .project-section-header{
-    max-width: 486px;
-    margin: 0 auto 6rem auto;
-    border-bottom: 2px solid white;
-    font-weight: 600;
-    font-size: xx-large;
+
+.project{
 }
 
-.projects-grid{
-    display: grid;display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 40px;
+.project img{
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-bottom: 36px;
+    height: 300px;
+    object-fit: contain;
+    border: 2px solid #e9e9e9;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
-.project-tile{
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-title{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.live-link{
     text-decoration: none;
-    color: white;
-    font-size: 26px;
+    display: inline-block;
+    background-color: #9333ea;
+    color: #f9f871;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 10px;
 }
-
-.project-tile:hover{
-    font-size: 30px;
-    color:#BE3144;
-    transition: color 0.3s ease-out;
-}
-
-
 
 .contact-section{
     display: flex;
@@ -132,35 +165,27 @@ h1{
     justify-content: center;
     width: 100%;
     text-align: center;
-    height: 80vh;
-    background-color: #303841;
+    height: 100vh;
 }
 
+
 .section-heading h2{    
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    color: white;
     font-size: -webkit-xxx-large;
 }
 
 .profile-link{
     margin: 24px;
     text-decoration: none;
-    color: white;
     font-size: xx-large;
     padding: 10px;
+    color: black;
 }
 
 .section-heading p{
-    color: white;
     font-style: italic;
     font-size: x-large;
     margin-bottom: 40px;
-}
-
-.profile-link:hover{
-    color:#BE3144;
-    transition: color 0.3s ease-out;
 }
 
 @media screen and (max-width: 680px){
@@ -174,5 +199,9 @@ h1{
     
     .contact-section{
         height: 90vh;
+    }
+
+    .project-container{
+        grid-template-columns: auto;
     }
 }
