@@ -76,6 +76,7 @@ h1{
     margin-top: 20px;
     font-size: -webkit-xxx-large;
     font-weight: 700;
+    text-align: center;
 }
 
 .sub-heading{
@@ -224,6 +225,14 @@ h1{
 
     .text-container{
         height: 950px;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    .sub-heading{
+        font-size: 26px;
     }
 
     
